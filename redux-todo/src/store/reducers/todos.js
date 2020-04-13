@@ -9,14 +9,13 @@ const todos = ( state = [], action ) => {
                     done: false
                 }
             ]
-            case 'TOGGLE_TODO':
-                return state.map(todo =>
-                    todo.id === action.id ? { ...todo, done: !todo.done} : todo
-                    )
+        case 'TOGGLE_TODO':
+            return state.map(todo =>
+                todo.id === action.id ? { ...todo, done: !todo.done} : todo
+        )
 
-            default: 
-            return false
-                    
+        default: 
+        return state
     }
 }
 
