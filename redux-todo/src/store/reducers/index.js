@@ -1,8 +1,8 @@
-import { combineReudcers } from 'react-redux'
+import { combineReducers } from 'redux'
 import todos from './todos'
 import showTodos from './showTodos'
 
-export default combineReudcers({
+export default combineReducers({
     todos,
     showTodos
 })

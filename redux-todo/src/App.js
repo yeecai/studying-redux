@@ -1,14 +1,14 @@
 import React from 'react';
-import AddTodo from './containers/AddTodo'
+// import AddTodo from './containers/AddTodo'
 import ShowTodolist from './containers/ShowTodolist'
-import Footer from './components/Footer'
+// import Footer from './components/footer'
 
 function App() {
   return (
     <div>
-    	<AddTodo />
+    	{/* <AddTodo /> */}
     	<ShowTodolist />
-    	<Footer />
+    	{/* <Footer /> */}
     </div>
   );
 }

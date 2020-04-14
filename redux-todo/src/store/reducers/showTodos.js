@@ -1,4 +1,4 @@
-import ShowFilters from '../actions';
+import { ShowFilters } from '../actions';
 
 const showTodosType = (state = ShowFilters.SHOW_ALL, action) => {
     switch (action.type) {
