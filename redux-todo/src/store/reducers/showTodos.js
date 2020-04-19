@@ -2,7 +2,7 @@ import { ShowFilters } from '../actions';
 
 const getTodosFilter = (state = ShowFilters.SHOW_ALL, action) => {
     switch (action.type) {
-        case 'SET_SHOW_TYPE':
+        case 'SET_SHOW_FILTER':
             return action.filter
         default:
             return state

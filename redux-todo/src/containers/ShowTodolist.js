@@ -14,13 +14,12 @@ const getTodosByFilter = (todos, filter) => {
       throw new Error("Unknow type of todo" + filter);
   }
 };
-const mapStateToProps = (state) => ({
-  todos: getTodosByFilter(state.todos, state.showTodos),
+const mapStateToProps = state => ({
+  todos: getTodosByFilter(state.todos, state.getTodosFilter),
 });
 
 const mapDispatchToProps = (dispatch) => ({
   toggleTodo: (id) => dispatch(toggleTodo(id)),
 });
 
-// how to @connet here????
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);

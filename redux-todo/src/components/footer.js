@@ -6,7 +6,7 @@ const Footer = () => (
   <div>
     <span>Show: </span>
     <TypeLink filter={ShowFilters.SHOW_ALL}>All</TypeLink>
-    <TypeLink filter={ShowFilters.SHOW_DONE}>Active</TypeLink>
+    <TypeLink filter={ShowFilters.SHOW_TODO}>Active</TypeLink>
     <TypeLink filter={ShowFilters.SHOW_DONE}>Done</TypeLink>
   </div>
 );
