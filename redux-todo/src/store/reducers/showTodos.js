@@ -1,6 +1,6 @@
 import { ShowFilters } from '../actions';
 
-const showTodosType = (state = ShowFilters.SHOW_ALL, action) => {
+const getTodosFilter = (state = ShowFilters.SHOW_ALL, action) => {
     switch (action.type) {
         case 'SET_SHOW_TYPE':
             return action.filter
@@ -9,4 +9,4 @@ const showTodosType = (state = ShowFilters.SHOW_ALL, action) => {
     }
 }
 
-export default showTodosType
+export default getTodosFilter

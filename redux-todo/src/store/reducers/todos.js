@@ -1,4 +1,7 @@
-const todos = ( state = [{id: 1, text: 'ok', done: false}, {id: 2, text: 'ok', done: false}], action ) => {
+const defaultStore =  [{id: 0, text: 'default todo1', done: false}, {id: 1, text: 'default todo2', done: false}]
+
+
+const todos = ( state = defaultStore, action ) => {
     switch (action.type) {
         case 'ADD_TODO' :
             return[
