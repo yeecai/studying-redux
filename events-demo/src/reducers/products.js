@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux'
-import { RECEIVE_PRODUCTS } from '../actionTypes'
-
+import { RECEIVE_PRODUCTS, ADD_TO_CART } from '../actionTypes'
 
 /**
  * products n *
